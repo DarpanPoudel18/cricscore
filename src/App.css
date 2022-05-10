@@ -1,38 +1,413 @@
-.App {
-  text-align: center;
+
+*{
+  box-sizing: border-box;
+  overflow-x:hidden;
+  }
+/*************************************[Navbar.js]*************************************/
+.nav-header{
+background-image: url('/public/images/backgroundimg.jpg');
+background:linear-gradient(92.04deg,#18184a 24.18%,#19398a 50.95%,#18184a 110.32%);
+background-repeat: no-repeat;
+background-size: cover;
+box-shadow:0 4px 8px 0 hsl(0deg 0% 7% / 50%);
+ }
+
+ .nav-header nav{
+  margin:5px;
+  padding:5px;
+  }
+
+ .nav-link{
+   color:white;
+   font-weight: bold;
+   font-family:Arial, Helvetica, sans-serif;
+   text-decoration: none;
+ }
+ 
+.nav-link:hover{
+  text-decoration: underline;
+  background-color:yellow;
+  color:black;
+  border-radius: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*************************************[Live.js]***************************************/
+
+  .loader{
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-bottom: 16px solid blue;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite;
+    /* animation: spin 2s linear infinite; */
+    animation-name:loader;
+    margin:180px auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+ @keyframes loader { 
+  from { 
+      transform: rotate(0deg); 
+  } to { 
+      transform: rotate(360deg); 
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+.Live{
+/* background-image: url('https://w0.peakpx.com/wallpaper/984/45/HD-wallpaper-cricket-ball-bails-football-sports-sports-equipment.jpg'); */
+margin-top: -5px;
+position: relative;
+/* background-image: url('/public/images/backgroundimg.jpg'); */
+ }
+ .background{
+  object-fit:contain;
+  background-image: url('https://w0.peakpx.com/wallpaper/984/45/HD-wallpaper-cricket-ball-bails-football-sports-sports-equipment.jpg');
+  background-position:0em;
+ }
+
+
+.logo{
+  object-fit:contain;
+  position:relative;
+  width:80px; 
+  height:80px;
 }
 
-.App-link {
-  color: #61dafb;
+.innerlive{
+  width:51%;
+  position:relative;
+   margin:15px auto;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  -webkit-border-radius: 0px 0px 40px 40px;
+ -moz-border-radius: 0px 0px 40px 40px;
+  border-radius: 0px 0px 40px 40px;
+  display:flex;
+  justify-content: space-between;
+  background-image: url('/public/images/backgroundimg.jpg'); 
+   color:white; 
+ }
+
+
+.live-venue{
+  position:absolute;
+ display: flex;
+ justify-content: flex-start;
+ 
+ }
+ .live-date{
+   position:absolute;
+   display: flex;
+   justify-content: flex-end;
+   
+ }
+
+.scoreboard{
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scoreboard-link{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: larger;
+font-weight: bolder;
+cursor: pointer;
 }
+
+.score{
+  left:12px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: larger;
+  position:relative;
+}
+
+.over1,.over2{
+  left:30px;
+  position:relative;
+}
+
+
+  .runs-block{
+    top:-10px;
+    position:relative;
+  }
+ 
+
+  .scorecard{
+    margin-left:55px;
+    position:relative;
+  }
+
+  .live-child-content{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: larger;
+  }
+
+  .live-status{
+    /* border:2px solid red; */
+  }
+
+  .live-status-block{
+    margin-left:65px;
+    position:relative;
+    }
+/***********************************[Live ended]***************************************/
+
+
+/*********************************[Upcoming.js]************************************/
+.Upcoming{
+ margin-top:-5px;
+ position:relative;
+ /* background-image: url('https://previews.123rf.com/images/pinnacleanimates/pinnacleanimates1102/pinnacleanimates110200020/8949596-beautiful-cricket-background-design-artwork.jpg'); */
+ background-image: url('https://thumb.cadbull.com/img/product_img/original/Cricket-stadium-design-Mon-Jun-2020-09-18-25.jpg');
+background-position:0em;
+background-size:contain;
+
+-webkit-box-shadow: 5px 5px 5px 0px #dacccc, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 5px 0px #696161, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.divcard{
+  display:inline-flex;
+  padding:5px;
+  margin: 10px;
+  left:8%;
+  border-radius: 18px;
+  border-color:gray;
+  height:170px;
+  
+}
+
+.divcard-child{
+  position:relative;
+  height:100%;
+  width:auto;
+}
+
+.divcard-child:hover{
+  transform: scale(0.90);
+  background-color: pink;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  overflow: hidden;
+}
+
+ .team-name{
+   font-weight: bolder;
+ }
+
+ .venue{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-style: oblique;
+ }
+/*******************************[Upcoming ended]************************************/
+
+
+
+
+
+/*************************************[Result.js]***************************************/
+.main-result{
+background-image: url('https://w0.peakpx.com/wallpaper/984/45/HD-wallpaper-cricket-ball-bails-football-sports-sports-equipment.jpg');
+background-position: 0fr;
+object-fit: contain;
+}
+
+.result-parent{
+  width:40%;
+  display :grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows :repeat(1, 1fr);
+  margin:auto;
+  border-radius:8px;
+ background: #CE3BB5;
+background: -moz-linear-gradient(left, #CE3BB5 0%, #37FFDB 50%, #ECE141 100%);
+background: -webkit-linear-gradient(left, #CE3BB5 0%, #37FFDB 50%, #ECE141 100%);
+background: linear-gradient(to right, #CE3BB5 0%, #37FFDB 50%, #ECE141 100%);
+}
+
+.result-inning{
+margin:auto;
+width:50%;
+}
+.child-result-inning{
+left:0;
+position:relative;
+font-weight: bolder;
+
+}
+
+
+.result-score{
+margin:auto;
+width:50%;
+}
+.child-result-score{
+left:50px;
+position:relative;
+}
+
+.child-result-over{
+  left:70px;
+position:relative;
+}
+
+/*ie. team1 vs team2*/
+.result-name{
+  color:black;
+}
+/*************************************[Result ended]************************************/
+
+
+/************************************* [Gallery.js] *******************************/
+.photos{
+  display :grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows :repeat(3, 1fr);
+  width :900px;
+  grid-gap: 0.5rem;
+  margin:auto;
+  
+}
+
+.gallery-img{
+  /* filter :grayscale(1);  */
+  /* opacity:0.5; */
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  padding:15px;
+  opacity: 0.3;
+  object-fit: contain;
+ }
+ .gallery-img:hover{
+   /* opacity:1.0; */
+   -webkit-transform: scale(1.3);
+	transform: scale(1.0);
+ opacity:1.0;
+ object-fit: contain;
+ overflow: hidden;
+  }
+/************************************ [Gallery ended] ******************************/
+
+
+
+
+/************************************* [Teams.js] **********************************/
+.teams{
+  border:2px solid black;
+}
+/************************************ [Team ended] ******************************/
+
+
+
+/************************************* [scoreboard.js] *****************************/
+.child-scoreboard-header{
+  margin:auto;
+  width:90%;
+}
+.Scoreboard-header{
+  margin: 4px auto;
+background-color:#E2F5DE;
+}
+
+
+
+.pull-right{
+  top:-60%;
+  position:relative;
+  float:right;
+  }
+
+ .inning-name{
+   top:-60%;
+   position:relative;
+  }
+
+.inning-name,.pull-right{
+  display:inline-block;
+
+}
+
+thead{
+  border:2px solid white;
+}
+
+.win-msg{
+ justify-items: center;
+ left:38%;
+ position:relative;
+ width:30%;
+ }
+
+ .table{
+   margin:auto;
+  }
+
+ /************************************ [series.js] **********************************/
+ .series{
+   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR83iVmZCC0YtVRlrYjOXeP8m81SQyG1wLM2g&usqp=CAU');
+  object-fit: contain;
+ 
+ }
+ 
+ .Parent-card{
+    width:50%;
+    margin: 15px auto;
+   border-radius:20px;
+   border:2px solid yellow;
+  }
+
+  .Parent-card:hover{
+    border-radius:20px;
+   background-color: cyan;
+ }
+
+/* info of odi t20 test matches */
+   .child-content:hover{
+background-color: #0dcaf0;
+font-weight: lighter;
+ }
+/******************************** [series ended] *************************************/
+
+
+
+
+/*********************** mobile view *******************************/
+
+ @media only screen and (max-width: 850px) {
+    .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  /* live container 1st nav */
+  .innerlive{
+    width:auto;
+  }
+
+  /* live: venue & date  */
+  .live-venue{
+    left:10%;
+  }
+
+  /* live: win-msg, scorecard */
+  .live-status-block{
+   left:10%;
+  }
+
+/********* [result.js] **********/
+/* result container */
+.result-parent{
+  width:auto;
+}
+
+}
+/***************************[ mobile view ended] ***********************************/
