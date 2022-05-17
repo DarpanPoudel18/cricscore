@@ -58,14 +58,14 @@ return (
          </div>
 
         <div className="container col-md-6 p-4 ps-md-0 live-child-content">
-          <p>{x.inning} - {x.r}/{x.w}</p>
+          <div>{x.inning} - {x.r}/{x.w}</div>
        </div>
             </>
                  )})
       }
 
          <div className="win-msg scorecard live-status-block">
-            <div style={{color:'cyan'}} className="h6 live-status">{status}</div>
+            <div className="h6 live-status">{status}</div>
             <p onClick={()=> navigate(`/Scoreboard/${id}`)} className="scoreboard-link">Scorecard</p>
          </div>
          
@@ -73,7 +73,9 @@ return (
             </div>
           ) })}  
 
-</div>
+
+
+  </div>
 </div>
   );
 };

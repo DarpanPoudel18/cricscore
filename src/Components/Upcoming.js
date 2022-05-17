@@ -41,12 +41,13 @@ fetchName();
 
 <div className="card divcard" style={{width:'18rem'}} key={id}>
   <div class="card-body divcard-child">
-    <h6 class="card-title venue">{venue}</h6>
-    <h6 class="card-subtitle mb-2 text-muted">{date}</h6>
-    <div className="team-name">
-    <p class="card-text">{name}</p>
-    </div>
-   </div>
+          <h6 class="card-title venue">{venue}</h6>
+          <h6 class="card-subtitle mb-2 text-muted date">{date}</h6>
+       <div className="team-name">
+          <p class="card-text">{name}</p>
+      </div>
+  </div>
+  
 </div>
 
      ) })

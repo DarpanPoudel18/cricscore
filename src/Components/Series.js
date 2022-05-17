@@ -41,18 +41,18 @@ const Series = () => {
             return(
                 <div className="card text-center series-margin  text-dark Parent-card" key={id}>
                    <div className="card-header bg-danger text-white">
-                    {name}
+                    <p>{name}</p>
                    </div>
                    <div className="card-header bg-warning bg-gradient ">
-                    <span>{startDate}    </span>
+                    <span>{startDate}</span>
                     <span>{endDate}</span>
                    </div>
                <div className="card-body  child-content ">
                  <h5 class="card-title">ODI {odi}</h5>
-                 <h5 class="card-title">T20 {t20}</h5>
+                 <h5 class="card-title">T20  {t20}</h5>
                  <h5 class="card-title">TEST {test}</h5>
-                 <h5 class="card-title">MATCHES {matches}</h5>
-                 <a href="https://www.cricbuzz.com/cricket-match/live-scores/recent-matches" class="btn btn-primary">Cricbuzz</a>
+                 {/* <h5 class="card-title">MATCHES {matches}</h5> */}
+             <a href="https://www.cricbuzz.com/cricket-match/live-scores/recent-matches" class="btn btn-primary">View More</a>
               </div>
              </div>
                   )

@@ -6,8 +6,7 @@ const url = " https://api.npoint.io/6c39d4ec7aa814bbe5ef"
 const Result = () => {
   const[state,setState] = useState([])
   const[loading,setLoading] = useState(true)
-  const navigate = useNavigate();
-
+  
   const fetchData = async() => {
     setLoading(true);
     try {
@@ -39,12 +38,15 @@ const Result = () => {
 
 {state.map((item)=>{
           const{venue,status,date,name,id,score} = item;
-          return(
+          return( 
             <>
 
   <div className="mb-3 result-parent" key={id}>
-     <div className="card-header bg-warning text-dark text-primary">{venue}{date}</div>
-         <div class="card-body text-success">
+     <div className="card-header bg-warning text-dark text-primary">
+            <span>{venue}</span>
+            <span>{date}</span>
+     </div>
+      <div class="card-body ">
            <h5 className="card-title result-name">{name}</h5>
         </div>
   {
