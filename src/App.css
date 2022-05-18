@@ -581,6 +581,10 @@ display:grid;
 	 
 .table-width{
     width:auto;
+   }	
+	 
+ .inning-area {
+     width:auto;
    }	 
 
 /********* [result.js] **********/
