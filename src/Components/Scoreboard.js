@@ -56,12 +56,12 @@ useEffect(()=>{
         const{batting,bowling,catching,extras,inning,totals,id} = item;
         return(
           <>
-          <div className="container  p-2 bg-secondary text-white" key={id}>
+          <div className="container  p-2 bg-secondary text-white inning-area" key={id}>
               <span className="inning-name">{inning}</span>
               <span className="pull-right">{totals.R}-{totals.W} ({totals.O})</span>
          </div>
 
-   <table className="table  p-3" >
+   <table className="table p-3 table-width" >
      <thead>
       <tr>
       <th scope="col" className="table-secondary text-secondary">Batter</th>
