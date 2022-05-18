@@ -513,7 +513,7 @@ font-weight: lighter;
 
   
    .nav-link:hover{
-      background-color: cyan;
+        background-color: rgb(2, 54, 54);
     } 
    
  /* live container 1st nav */
