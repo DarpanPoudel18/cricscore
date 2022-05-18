@@ -565,6 +565,13 @@ font-weight: lighter;
     bottom:-20px;
     border-bottom: 2px solid red;
 }
+	 
+.child-scoreboard-header{
+width:100%;
+display:grid;
+  }
+	 
+	 
 
 /********* [result.js] **********/
 /* result container */
