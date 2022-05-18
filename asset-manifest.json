@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cricscore/static/css/main.012615da.css",
-    "main.js": "/cricscore/static/js/main.dbe74ae0.js",
+    "main.css": "/cricscore/static/css/main.5c34f9c0.css",
+    "main.js": "/cricscore/static/js/main.3c98474f.js",
     "static/js/787.ac8150d9.chunk.js": "/cricscore/static/js/787.ac8150d9.chunk.js",
     "static/media/backgroundimg.jpg": "/cricscore/static/media/backgroundimg.f23830a97fb5a59bad0f.jpg",
     "index.html": "/cricscore/index.html",
-    "main.012615da.css.map": "/cricscore/static/css/main.012615da.css.map",
-    "main.dbe74ae0.js.map": "/cricscore/static/js/main.dbe74ae0.js.map",
+    "main.5c34f9c0.css.map": "/cricscore/static/css/main.5c34f9c0.css.map",
+    "main.3c98474f.js.map": "/cricscore/static/js/main.3c98474f.js.map",
     "787.ac8150d9.chunk.js.map": "/cricscore/static/js/787.ac8150d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.012615da.css",
-    "static/js/main.dbe74ae0.js"
+    "static/css/main.5c34f9c0.css",
+    "static/js/main.3c98474f.js"
   ]
 }
