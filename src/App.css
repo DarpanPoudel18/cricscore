@@ -397,6 +397,14 @@ position:relative;
 background-color:#E2F5DE;
 }
 
+.table-width{
+  width:75%;
+}
+
+.inning-area{
+  width:75%;
+}
+
 
 
 .pull-right{
@@ -571,7 +579,9 @@ width:100%;
 display:grid;
   }
 	 
-	 
+.table-width{
+    width:auto;
+   }	 
 
 /********* [result.js] **********/
 /* result container */
