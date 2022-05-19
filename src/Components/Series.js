@@ -13,7 +13,7 @@ const Series = () => {
             const result = await response.json();
             setLoading(false);
             setState(result) 
-            console.log(result);
+           
         }catch(error){
             setLoading(false);
             console.log(error);
