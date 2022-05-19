@@ -12,7 +12,6 @@ const Upcoming = () => {
       const response = await fetch(url)
       const result = await response.json()
       setLoading(false);
-      console.log(result);
       setState(result);
       }
     catch(error){
