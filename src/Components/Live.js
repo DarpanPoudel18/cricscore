@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-
-// const url = "https://api.npoint.io/11fef9c7eae0aa685ad8"
 const url=" https://api.npoint.io/7449f77f21e49fe45328"
 
 const Live = () => {
@@ -16,7 +14,6 @@ const Live = () => {
       const response = await fetch(url);
       const result = await response.json();
       setLoading(false);
-      console.log(result);
       setState(result);
       } catch (error) {
         setLoading(false);
